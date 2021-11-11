@@ -23,3 +23,6 @@ Para instalação dos pacotes digite ```yarn``` ou ```npm install```
 Para executar o projeto em modo de desenvolvimento digite ```yarn dev``` ou ```npm run dev```
 
 Pronto, a aplicação deve estar rodando em ```http://localhost:3000```
+
+### Authors
+Projeto desenvolvido e aprimorado tendo como base o projeto do Luiz Otávio Miranda listado [aqui](https://github.com/luizomf/typescript-pomodoro-react)
