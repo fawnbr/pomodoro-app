@@ -8,7 +8,7 @@ body{
   font-family: sans-serif;
   background: #41e2ba;
   transition: background-color 300ms ease-in-out;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 .App{

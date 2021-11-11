@@ -1,4 +1,3 @@
-/*eslint-disable */
 import { secondsToTime } from '../../utils/secondsToTime';
 
 type TimerProps = {

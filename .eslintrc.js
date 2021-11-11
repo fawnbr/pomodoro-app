@@ -10,6 +10,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
   ],
   globals: {
     Atomics: 'readonly',
@@ -19,8 +20,11 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 11,
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react'],
   rules: {
     'react/react-in-jsx-scope': 'off',
   },
