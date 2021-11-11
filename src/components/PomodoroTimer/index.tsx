@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useInterval } from '../../hooks/useInterval';
 import { Button } from '../Button';
 import { Timer } from '../Timer';
+import { audioStartWorking, audioStopWorking } from '../../utils/handleSounds';
 
 type PomodoroTimerProps = {
   defaultPomodoroTime: number;
@@ -33,6 +34,7 @@ export function PomodoroTimer(props: PomodoroTimerProps): JSX.Element {
     setIsWorking(true);
     setIsResting(false);
     setMainTime(props.defaultPomodoroTime);
+    audioStartWorking.play();
   };
   const startRest = (isLong: boolean) => {
     setIsCounting(true);
@@ -43,6 +45,7 @@ export function PomodoroTimer(props: PomodoroTimerProps): JSX.Element {
     } else {
       setMainTime(props.shortRestTime);
     }
+    audioStopWorking.play();
   };
 
   return (
